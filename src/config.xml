@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<operator xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="count-list" version="0.1.0">
+
+    <details>
+        <title>Count list operator</title>
+        <homepage>https://github.com/mognom/count-list-operator</homepage>
+        <authors>Alejandro Rodríguez &lt;alex.rodriguez@conwet.com&gt;</authors>
+        <email>alex.rodriguez@conwet.com</email>
+        <image></image>
+        <smartphoneimage></smartphoneimage>
+        <description>Count number of items and number of ocurrences of a list</description>
+        <longdescription>DESCRIPTION.md</longdescription>
+        <changelog>doc/changelog.md</changelog>
+        <doc>doc/userguide.md</doc>
+        <license>MIT</license>
+        <issuetracker>https://github.com/mognom/count-list-operator/issues</issuetracker>
+    </details>
+
+    <wiring>
+        <inputendpoint name="list" label="Data serie"  type="text" friendcode="number-serie list label-serie" />
+
+        <outputendpoint name="length" label="List length" description="The length of the list" type="text" friendcode="number"/>
+        <outputendpoint name="count" label="List item count" description="The ocurrences of each item of the list" type="text" friendcode="number"/>
+    </wiring>
+
+    <scripts>
+        <script src="js/main.js"/>
+    </scripts>
+
+</operator>
